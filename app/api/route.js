@@ -12,7 +12,7 @@ export const feedBack = [
 ]
 
 
-export async function GET() {
+export async function GET(request) {
   return Response.json({
     status: 200,
     message: "Hello from API route!"

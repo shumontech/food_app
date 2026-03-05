@@ -13,9 +13,9 @@ const SearchInput = () => {
     const form = e.target;
     const value = form.search.value.trim();
 
-    if (!value) return; // ✅ empty হলে কিছু করবে না
+    if (!value) return; 
 
-    // ✅ existing params copy করা
+    
     const newParams = new URLSearchParams(params.toString());
 
     newParams.set("search", value);
